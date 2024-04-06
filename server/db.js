@@ -4,11 +4,7 @@ import pkg from "pg";
 const { Pool } = pkg;
 
 const pool = new Pool({
-  user: "postgres",
-  password: "piyush",
-  host: "localhost",
-  port: 5432,
-  database: "PERNtodo",
+  connectionString: process.env.POSTGRES_URL,
 });
 
 export default pool;
