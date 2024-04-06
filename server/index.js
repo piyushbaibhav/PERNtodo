@@ -6,7 +6,13 @@ import pool from './db.js';
 const app = express();
 
 //middleware
-app.use(cors())
+app.use(
+  cors({
+    origin: ["https://per-ntodo-frontend.vercel.app/"],
+    methods: ["GET","POST","PUT","DELETE"],
+    credentials:true,
+  })
+);
 app.use(express.json());
 
 //routes
