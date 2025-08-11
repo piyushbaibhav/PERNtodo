@@ -1,1 +1,1 @@
-# Postgres use kerna sikh gaya aur ek aur basic todo bna lia
+# Learned to integrate and use postgeSQL
